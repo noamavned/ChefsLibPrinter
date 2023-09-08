@@ -1,7 +1,7 @@
 INDENTATION = "    "
 
 def __printFunc__(method_obj, method_name, printDocs, printReturns) -> None:
-    return_type = method_obj.__annotations__.get("return", "Unknown")
+    return_type = method_obj.__annotations__.get("return", "Any")
     docstring = method_obj.__doc__ if method_obj.__doc__ else "No documentation"
 
     if not printReturns and not printDocs:
